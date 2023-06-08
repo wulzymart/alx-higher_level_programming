@@ -9,4 +9,4 @@ if __name__ == "__main__":
             if i > 0:
                 print(f"{i}: {arg}")
     else:
-        print("0 arguements.")
+        print("0 arguments.")
