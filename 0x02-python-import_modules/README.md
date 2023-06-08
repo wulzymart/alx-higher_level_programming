@@ -82,3 +82,9 @@ Write a program that imports all functions from the file calculator_1.py and han
 		The result should be printed like this: <a> <operator> <b> = <result>, followed by a new line
 	You are not allowed to use * for importing or __import__
 	Your code should not be executed when imported
+
+# Task 7:
+Write a program that prints #pythoniscool, followed by a new line, in the standard output.
+
+Your program should be maximum 2 lines long
+You are not allowed to use print or eval or open or import sys in your file 101-easy_print.py
