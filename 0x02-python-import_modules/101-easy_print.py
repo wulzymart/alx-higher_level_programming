@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-__builtins__.__dict__['open'](1, 'w').write("#pythoniscool\n")
+__import__("os").write(1,b"#pythoniscool\n")
