@@ -27,10 +27,14 @@ int is_palindrome(listint_t **head)
 	int *list_arr, i = 0, j = 0;
 	listint_t *h;
 
-	if (!head || !*head || !(*head)->next)
+	if (!head || !*head)
 		return (0);
+	if (!(*head)->next)
+		return (1);
 	h = *head;
 	list_arr = malloc(sizeof(int) * list_len(*head));
+	if (!list_arr)
+		return (0);
 	while (h)
 	{
 		list_arr[i++] = h->n;
