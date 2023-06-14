@@ -6,4 +6,4 @@ def best_score(a_dictionary):
         for key, value in a_dictionary.items():
             best = key if value >= innital else best
             innital = value
-        return best
+    return best
