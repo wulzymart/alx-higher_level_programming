@@ -102,3 +102,32 @@ Create a function def roman_to_int(roman_string): that converts a Roman numeral 
 	You can assume the number will be between 1 to 3999.
 	def roman_to_int(roman_string) must return an integer
 	If the roman_string is not a string or None, return 0
+
+# Task 13:
+Write a function that returns the weighted average of all integers tuple (<score>, <weight>)
+
+	Prototype: def weight_average(my_list=[]):
+	Returns 0 if the list is empty
+	You are not allowed to import any module
+
+# Task 14:
+Write a function that computes the square value of all integers of a matrix using map
+
+	Prototype: def square_matrix_map(matrix=[]):
+	matrix is a 2 dimensional array
+	Returns a new matrix:
+		Same size as matrix
+		Each value should be the square of the value of the input
+	Initial matrix should not be modified
+	You are not allowed to import any module
+	You have to use map
+	You are not allowed to use for or while
+	Your file should be max 3 lines
+# Task 15:
+Write a function that deletes keys with a specific value in a dictionary.
+
+	Prototype: def complex_delete(a_dictionary, value):
+	If the value doesn’t exist, the dictionary won’t change
+	All keys having the searched value have to be deleted
+	You are not allowed to import any module
+# Task 16:
