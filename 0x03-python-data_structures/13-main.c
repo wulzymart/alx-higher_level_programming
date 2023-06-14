@@ -9,20 +9,21 @@
  */
 int main(void)
 {
-    listint_t *head;
+    listint_t *head, *head2, *new;
 
     head = NULL;
     add_nodeint_end(&head, 1);
-    add_nodeint_end(&head, 17);
-    add_nodeint_end(&head, 972);
-    add_nodeint_end(&head, 50);
-    add_nodeint_end(&head, 98);
-    add_nodeint_end(&head, 98);
-    add_nodeint_end(&head, 50);
-    add_nodeint_end(&head, 972);
-    add_nodeint_end(&head, 17);
-    add_nodeint_end(&head, 1);
+    add_nodeint_end(&head, 3);
+    add_nodeint_end(&head, 5);
+    add_nodeint_end(&head, 7);
     print_listint(head);
+    head2 = NULL;
+    add_nodeint_end(&head2, 2);
+    add_nodeint_end(&head, 4);
+    add_nodeint_end(&head, 6);
+    add_nodeint_end(&head, 8);
+    print_listint(head2);
+    
 
     if (is_palindrome(&head) == 1)
         printf("Linked list is a palindrome\n");
