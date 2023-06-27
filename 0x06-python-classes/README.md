@@ -140,3 +140,17 @@ Write a class Square that defines a square by: (based on 6-square.py)
     	position should be use by using space
     Printing a Square instance should have the same behavior as my_print()
     You are not allowed to import any module
+
+# Task 9:
+
+Write a class Square that defines a square by: (based on 4-square.py)
+
+    Private instance attribute: size:
+    	property def size(self): to retrieve it
+    	property setter def size(self, value): to set it:
+    		size must be a number (float or integer), otherwise raise a TypeError exception with the message size must be a number
+    		if size is less than 0, raise a ValueError exception with the message size must be >= 0
+    Instantiation with size: def __init__(self, size=0):
+    Public instance method: def area(self): that returns the current square area
+    Square instance can answer to comparators: ==, !=, >, >=, < and <= based on the square area
+    You are not allowed to import any module
