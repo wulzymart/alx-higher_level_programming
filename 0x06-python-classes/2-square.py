@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+"""Module for square generation"""
+
+
 class Square:
+    """Class for getting squares of any size"""
     def __init__(self, size=0):
+        """Initializes a square instance"""
         if isinstance(size, int):
             if size >= 0:
                 self.__size = size
