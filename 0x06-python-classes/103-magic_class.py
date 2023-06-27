@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Magic class Module for circle properties"""
-from math import pi
+import math
 
 
 class MagicClass:
@@ -12,8 +12,8 @@ class MagicClass:
 
     def area(self):
         """calculates area of circle"""
-        return (self.__radius**2) * pi
+        return (self.__radius**2) * math.pi
 
     def circumference(self):
         """Calculates circumference of a circle"""
-        return 2 * pi * self.__radius
+        return 2 * math.pi * self.__radius
