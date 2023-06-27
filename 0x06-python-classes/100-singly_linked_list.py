@@ -70,6 +70,7 @@ class SinglyLinkedList:
         prev.next_node = node
 
     def __str__(self):
+        """prints all data in the linked list"""
         datas = []
         head = self.__head
         while head:
