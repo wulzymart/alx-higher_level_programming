@@ -30,36 +30,24 @@ class Square:
 
     def __eq__(self, other):
         """Checks for equality"""
-        if not isinstance(other, Square):
-            raise TypeError("Cant compare Square with other objects")
         return self.area() == other.area()
 
     def __ne__(self, other):
         """Checks for inequality"""
-        if not isinstance(other, Square):
-            raise TypeError("Cant compare Square with other objects")
         return self.area() != other.area()
 
     def __lt__(self, other):
         """Checks if <"""
-        if not isinstance(other, Square):
-            raise TypeError("Cant compare Square with other objects")
         return self.area() < other.area()
 
     def __le__(self, other):
         """Checks if <="""
-        if not isinstance(other, Square):
-            raise TypeError("Cant compare Square with other objects")
         return self.area() <= other.area()
 
     def __gt__(self, other):
         """Checks if >"""
-        if not isinstance(other, Square):
-            raise TypeError("Cant compare Square with other objects")
         return self.area() > other.area()
 
     def __gt__(self, other):
         """Checks if >="""
-        if not isinstance(other, Square):
-            raise TypeError("Cant compare Square with other objects")
         return self.area() >= other.area()
