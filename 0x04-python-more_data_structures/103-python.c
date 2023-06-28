@@ -14,7 +14,7 @@ void print_python_bytes(PyObject *p)
 	{
 		size = ((PyVarObject *)p)->ob_size;
 		printf("  size: %ld\n", size);
-		str = PyBytes_AsString(p);
+		str = ((PyBytesObject *)p)->ob_sval;
 		printf("  trying string: %s\n", str);
 		limit = size < 10 ? size + 1 : 10;
 		printf("  first %ld bytes: ", limit);
@@ -40,10 +40,10 @@ void print_python_list(PyObject *p)
 	Py_ssize_t alloc, size;
 	PyObject *item;
 
-	size = PyList_Size(p);
 	puts("[*] Python list info");
-	if (size >= 0)
+	if (PyList_Check(p))
 	{
+		size = ((PyVarObject *)p)->ob_size;
 		tmp = (PyListObject *)p;
 		alloc = tmp->allocated;
 		printf("[*] Size of the Python List = %ld\n", size);
