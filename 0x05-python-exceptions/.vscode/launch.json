@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/mart/vagrant/ubuntu_focal/alx-higher_level_programming/0x05-python-exceptions",
+      "program": "/Users/mart/vagrant/ubuntu_focal/alx-higher_level_programming/0x05-python-exceptions/build/Debug/outDebug"
+    }
+  ]
+}
