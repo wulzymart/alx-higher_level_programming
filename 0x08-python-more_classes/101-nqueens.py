@@ -32,6 +32,7 @@ def search(state, solutions, n):
         for row, col in enumerate(state):
             result.append([row, col])
         solutions.append(result.copy())
+        return
 
     for candidate in get_candidates(state, n):
         state.append(candidate)
