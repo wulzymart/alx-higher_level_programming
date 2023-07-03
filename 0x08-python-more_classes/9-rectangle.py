@@ -96,6 +96,5 @@ class Rectangle:
         Args:
             size (int): size of the sides of the square
         """
-        if not isinstance(size, int):
-            raise TypeError("size must be an integer")
-        return cls(size, size)
+        if isinstance(size, int):
+            return cls(size, size)
