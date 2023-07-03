@@ -95,12 +95,12 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ("")
 
-        rect = []
+        res = []
         for i in range(self.__height):
-            [rect.append(str(self.print_symbol)) for j in range(self.__width)]
+            [res.append(str(self.print_symbol)) for j in range(self.__width)]
             if i != self.__height - 1:
-                rect.append("\n")
-        return ("".join(rect))
+                res.append("\n")
+        return ("".join(res))
 
     def __repr__(self):
         """Return the evaluatabe string representation of the Rectangle."""
