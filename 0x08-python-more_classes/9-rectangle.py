@@ -104,9 +104,8 @@ class Rectangle:
 
     def __repr__(self):
         """Return the evaluatabe string representation of the Rectangle."""
-        rep = ""
-        rep += "Rectangle(" + str(self.__width) + ", " +`
-        str(self.__height) + ")"
+        rep = "Rectangle(" + str(self.__width) + ", " +\
+            str(self.__height) + ")"
         return (rep)
 
     def __del__(self):
