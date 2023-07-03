@@ -90,7 +90,7 @@ class Rectangle:
 
     def __repr__(self):
         """returns official representation of the instance"""
-        return "Rectangle({}, {})".format(self.__width, self.__height)
+        return "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
 
     def __del__(self):
         """Called when instance is deleted"""
