@@ -53,7 +53,7 @@ def solve_N_Queen(n):
 
 def print_N_queen(n):
     """Prints solution of n size"""
-    solution = solve(n)
+    solution = solve_N_Queen(n)
     for i in solution:
         print(i)
 
