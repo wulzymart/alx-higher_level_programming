@@ -3,6 +3,20 @@
 
 
 def matrix_divided(matrix, div):
+    """divides all elements of a matrix.
+
+    Args:
+        matrix (list of list of integers or float): Matrix to be divided
+        div (int or float): divisor
+
+    Raises:
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+        TypeError: Each row of the matrix must have the same size
+        TypeError: div must be a number
+        ZeroDivisionError: division by zero
+
+    Returns: A new matrix containing results of division in 2 decimal places
+    """
     if not matrix or not isinstance(matrix, list) or\
         not all(row and isinstance(row, list) for row in matrix) or\
             not all(((isinstance(num, int) or isinstance(num, float)) and

@@ -12,7 +12,7 @@ def add_integer(a, b=98):
 
     Raises:
         TypeError: if either number is not an int or float
-        TypeError: if eaither number is float infinity or NaN
+        TypeError: if either number is float infinity or NaN
     Returns:
         result of integer addition of the 2 numbers
     """
