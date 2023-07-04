@@ -70,4 +70,7 @@ if __name__ == '__main__':
     except ValueError:
         print("N must be a number")
         sys.exit(1)
+    if n < 4:
+        print("N must be at least 4")
+        sys.exit(1)
     print_N_queen(n)
