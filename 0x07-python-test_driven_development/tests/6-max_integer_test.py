@@ -12,6 +12,18 @@ class TestMaxInteger(unittest.TestCase):
         """tests for when list is a  non empty list of integers"""
         self.assertEqual(max_integer([1, 2, 4, 3]), 4)
 
+    def test_max_at_begining(self):
+        """tests for when max at begining"""
+        self.assertEqual(max_integer([5, 2, 4, 3]), 5)
+
+    def test_max_at_middle(self):
+        """tests for when max in middle"""
+        self.assertEqual(max_integer([1, 2, 5, 3, 4]), 5)
+
+    def test_one_element(self):
+        """tests for when list is a  non empty list of integers"""
+        self.assertEqual(max_integer([5]), 5)
+
     def test_empty_list(self):
         """tests for when empty list is passed"""
         self.assertIsNone(max_integer([]))

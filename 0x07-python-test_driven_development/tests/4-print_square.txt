@@ -16,7 +16,7 @@ size is an integer greater than 0
 
 ::
 	>>> print_square(0)
-	<BLANKLINE>
+
 
 size can only be integers
 ::

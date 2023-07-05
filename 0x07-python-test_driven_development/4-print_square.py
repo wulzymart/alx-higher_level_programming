@@ -22,4 +22,4 @@ def print_square(size):
             print("#", end="")
         print()
     if size == 0:
-        print("")
+        return
