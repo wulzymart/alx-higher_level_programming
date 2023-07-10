@@ -1,26 +1,26 @@
 Importing the function from the module:
-        >>> BG = __import__("7-base_geometry").BaseGeometry
+        >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 Testing for module docstring:
-         >>> m = __import__("7-base_geometry").__doc__
-         >>> len(m) > 1
+         >>> m_doc = __import__("7-base_geometry").__doc__
+         >>> len(m_doc) > 1
          True
 
 Testing for class docstring:
-         >>> c = __import__("7-base_geometry").BaseGeometry.__doc__
-         >>> len(c) > 1
+         >>> c_doc = __import__("7-base_geometry").BaseGeometry.__doc__
+         >>> len(c_doc) > 1
          True
 
 Testing for method docstring:
-	  >>> mod1 = __import__("7-base_geometry").BaseGeometry.area.__doc__
-	  >>> len(mod1) > 1
+	  >>> meth_doc = __import__("7-base_geometry").BaseGeometry.area.__doc__
+	  >>> len(meth_doc) > 1
 	  True
-	  >>> mod2 = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
-          >>> len(mod2) > 1
+	  >>> meth_doc = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+          >>> len(meth_doc) > 1
           True
 
 Testing for area failure:
-	  >>> b = BG()
+	  >>> b = BaseGeometry()
 	  >>> b.area()
 	  Traceback (most recent call last):
 	  ...
