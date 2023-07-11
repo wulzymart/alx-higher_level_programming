@@ -30,13 +30,15 @@ try:  # read lines from stdin
             total_size += int(items[-1])
         except (ValueError, IndexError):
             pass
-
-        status = items[-2]
-        if status in valid_status:
-            if status in status_counts:
-                status_counts[status] += 1
-            else:
-                status_counts[status] = 1
+        try:
+            status = items[-2]
+            if status in valid_status:
+                if status in status_counts:
+                    status_counts[status] += 1
+                else:
+                    status_counts[status] = 1
+        except IndexError:
+            pass
     print_stats(total_size, status_counts)
 except KeyboardInterrupt:
     print_stats(total_size, status_counts)
