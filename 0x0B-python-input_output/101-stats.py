@@ -26,19 +26,15 @@ try:  # read lines from stdin
         else:
             count += 1
         items = line.rstrip().split()  # remove newline character and split
-        try:
-            total_size += int(items[-1])
-        except (ValueError, IndexError):
-            pass
-        try:
-            status = items[-2]
-            if status in valid_status:
-                if status in status_counts:
-                    status_counts[status] += 1
-                else:
-                    status_counts[status] = 1
-        except IndexError:
-            pass
+
+        total_size += int(items[-1])
+
+        status = items[-2]
+        if status in valid_status:
+            if status in status_counts:
+                status_counts[status] += 1
+            else:
+                status_counts[status] = 1
     print_stats(total_size, status_counts)
 except KeyboardInterrupt:
     print_stats(total_size, status_counts)
