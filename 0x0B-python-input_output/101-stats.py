@@ -8,8 +8,8 @@ import sys
 def print_stats(total_size, status_counts):
     """prints the stats"""
     print("File size: {:d}".format(total_size))
-    for key in sorted(status_counts):
-        print("{}: {:d}".format(key, status_counts[key]))
+    for key, value in sorted(status_counts.items()):
+        print("{}: {:d}".format(key, value))
     sys.stdout.flush()
 
 
