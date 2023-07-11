@@ -20,11 +20,6 @@ count = 0
 try:  # read lines from stdin
     for line in sys.stdin:
         # Process the line here
-        if count == 10:
-            print_stats(total_size, status_counts)
-            count = 1
-        else:
-            count += 1
         items = line.rstrip().split()  # remove newline character and split
         try:
             total_size += int(items[-1])
@@ -39,6 +34,9 @@ try:  # read lines from stdin
                     status_counts[status] = 1
         except IndexError:
             pass
+        count += 1
+        if count % 10 == 0:
+            print_stats(total_size, status_counts)
     print_stats(total_size, status_counts)
 except KeyboardInterrupt:
     print_stats(total_size, status_counts)
