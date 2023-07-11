@@ -26,8 +26,10 @@ try:  # read lines from stdin
         else:
             count += 1
         items = line.rstrip().split()  # remove newline character and split
-
-        total_size += int(items[-1])
+        try:
+            total_size += int(items[-1])
+        except (ValueError, IndexError):
+            pass
 
         status = items[-2]
         if status in valid_status:
