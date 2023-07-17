@@ -37,6 +37,8 @@ class Base:
     def save_to_file(cls, list_objs):
         """saves a list of instance dictionaries to json file"""
         to_print = []
+        if list_objs is None:
+            list_objs = []
         for obj in list_objs:
             to_print.append(obj.to_dictionary())
         with open(cls.__name__ + ".json", "w", encoding="utf-8") as f:
