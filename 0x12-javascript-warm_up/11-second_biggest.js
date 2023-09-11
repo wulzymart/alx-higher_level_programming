@@ -1,19 +1,8 @@
 #!/usr/bin/node
-const args = process.argv;
-const length = args.length;
-let max;
+const args = process.argv.slice(2, process.argv.length);
 let sec;
 if (args.length <= 3) console.log(0);
 else {
-  max = parseInt(args[2]);
-  for (let i = 3; i < length; i++) {
-    const current = parseInt(args[i]);
-    if (current > max) {
-      sec = max;
-      max = current;
-    } else if (current > sec) {
-      sec = current;
-    }
-  }
+  sec = args.map(arg => parseInt(arg)).sort((a, b) => b - a)[1];
   console.log(sec);
 }
