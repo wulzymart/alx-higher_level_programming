@@ -12,4 +12,4 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
     instance = session.query(State).order_by(State.id).first()
-    print(instance.id, instance.name)
+    print('{0}: {1}'.format(instance.id, instance.name))

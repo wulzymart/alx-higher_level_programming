@@ -13,4 +13,4 @@ if __name__ == "__main__":
     session = Session()
     for instance in session.query(State).filter(State.name.like('%a%'))\
             .order_by(State.id):
-        print(instance.id, instance.name)
+        print('{0}: {1}'.format(instance.id, instance.name))
