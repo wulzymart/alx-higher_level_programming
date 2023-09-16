@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Start link class to table in database
+"""changes the name of a State object from the database
 """
 import sys
 from model_state import Base, State

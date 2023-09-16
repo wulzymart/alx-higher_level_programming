@@ -2,7 +2,6 @@
 """modul containing a class for cities object"""
 
 from sqlalchemy import Column, String, Integer, ForeignKey
-from sqlalchemy.orm import relationship
 from model_state import Base, State
 
 

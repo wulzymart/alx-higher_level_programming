@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Start link class to table in database
+""" lists all State objects that contain the letter a from the database
 """
 import sys
 from model_state import Base, State

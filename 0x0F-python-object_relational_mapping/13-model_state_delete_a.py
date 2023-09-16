@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Start link class to table in database
+"""deletes all State objects with a name
+containing the letter a from the database
 """
 import sys
 from model_state import Base, State
