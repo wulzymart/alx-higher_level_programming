@@ -24,3 +24,11 @@ def find_peak_help(nums, start=None, end=None):
         return find_peak_help(nums, mid + 1, length - 1)
 
     return find_peak_help(nums, 0, mid - 1)
+
+
+def find_peak(list_of_integers):
+    """gets the peak integer from a list of integers"""
+    if not list_of_integers:
+        return None
+    index = find_peak_help(list_of_integers)
+    return list_of_integers[index]
