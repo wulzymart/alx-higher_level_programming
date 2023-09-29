@@ -15,7 +15,7 @@ if __name__ == "__main__":
         commits = res.json()
         for i in range(10):
             sha = commits[i].get('sha')
-            author_name = commits[i].get("author").get("name")
+            author_name = commits[i].get('commit').get("author").get("name")
             print(f"{sha}: {author_name}")
-    except Exception as e:
+    except IndexError:
         pass
